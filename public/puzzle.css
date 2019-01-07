@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+/* ID */
+#outside-box {
+    border: 5px solid brown;
+    border-radius: 5px;
+    width: 600px;
+    height: 600px;
+    position: relative;
+    left: 50%;
+    top: 200px;
+    transform: translate(-50%, 0);
+    
+}
+
+#shuffle-container {
+    top: 125px;
+}
+
+#score {
+    top: 175px;
+}
+
+/* Class */
+
+.move-counter {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 25px;
+
+}
+
+
+/* Tags */
+
+
+h1 {
+    position: absolute;
+    left: 51%;
+    transform: translate(-50%, 0);
+    width: 200px;
+}
+
+p {
+    display: inline;
+}
+
+td {
+    text-align: center;
+    border: 2px solid black;
+    border-style: inset;
+    height: 150px;
+    width: 150px;
+    font-size: 150%;
+}

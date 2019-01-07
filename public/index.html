@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>15 Puzzle</title>
+
+    <link rel='stylesheet' type='text/css' href='puzzle.css'>
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCDiwq2-pHxpbrS1oFWGAGtmtYyAl9P85I",
+            authDomain: "puzzle-65e34.firebaseapp.com",
+            databaseURL: "https://puzzle-65e34.firebaseio.com",
+            projectId: "puzzle-65e34",
+            storageBucket: "puzzle-65e34.appspot.com",
+            messagingSenderId: "614724559797"
+        };
+        firebase.initializeApp(config);
+    </script>
+</head>
+
+<body>
+    <h1>15 Puzzle</h1>
+    <div class='move-counter' id='shuffle-container'>
+        <p>Number of times shuffled:</p>
+        <p id='shuffled'></p>
+    </div>
+    <div class='move-counter' id='score'>
+        <p>Moves:</p>
+        <p id='counter'>0</p>
+    </div>
+    <table id='outside-box'></table>
+
+    <script src='puzzle2.js'>
+
+    </script>
+</body>
+
+</html>
